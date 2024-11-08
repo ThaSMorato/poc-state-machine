@@ -3,7 +3,6 @@ import { MachineEntity, MachineUseCase } from "../config/machineConfig";
 export abstract class BaseUseCase implements MachineUseCase {
   abstract onEnter(entity: MachineEntity): Promise<void>;
   abstract onExit(entity: MachineEntity): Promise<void>;
-  abstract token: string;
 
   abstract execute(entity: MachineEntity): Promise<void>;
 

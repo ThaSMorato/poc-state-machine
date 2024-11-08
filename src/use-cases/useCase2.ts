@@ -2,7 +2,7 @@ import { MachineEntity, MachineUseCase } from "../config/machineConfig";
 import { BaseUseCase } from "./useCase";
 
 export class UseCase2 extends BaseUseCase {
-  token = 'UseCase2';
+  static token = 'UseCase2';
 
   async onLeft(entity: MachineEntity): Promise<void> {
     entity.state = 'state4';

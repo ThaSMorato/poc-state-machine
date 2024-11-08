@@ -28,8 +28,8 @@ export const config: MachineConfig = {
 } as const
 
 export const usecaseLib = {
-  UseCase1: UseCase1,
-  UseCase2: UseCase2,
-  UseCase3: UseCase3,
-  UseCase4: UseCase4
+  [UseCase1.token]: UseCase1,
+  [UseCase2.token]: UseCase2,
+  [UseCase3.token]: UseCase3,
+  [UseCase4.token]: UseCase4
 } as const
